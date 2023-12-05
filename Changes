@@ -1,6 +1,7 @@
 Revision history for Net-Whois
 
 {{$NEXT}}
+    - Skip actual WHOIS tests on installation
 
 0.0.2  2023-11-26T11:47:19+01:00
     - Open the socket using UFT8-C8 encoding
