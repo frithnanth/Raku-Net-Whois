@@ -3,8 +3,13 @@
 use Test;
 use lib 'lib';
 use Net::Whois;
+plan 6;
 
-plan :skip-all<Basic usage tests not required for installation> unless %*ENV<TEST_AUTHOR>;
+unless %*ENV<NETWORK_TESTING> {
+  diag "NETWORK_TESTING was not set";
+  skip-rest("NETWORK_TESTING was not set");
+  exit;
+}
 
 my Net::Whois $nw .= new;
 my %result;
