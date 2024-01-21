@@ -1,6 +1,6 @@
 use v6.d+
 
-unit class Net::Whois:ver<0.0.2>:auth<zef:FRITH>;
+unit class Net::Whois:ver<0.0.3>:auth<zef:FRITH>;
 
 subset IP of Str is export where * ~~ /^ [ (\d ** 1..3) <?{ $/[*-1][*-1] < 256 }> ] ** 4 % '.' $/;
 subset Domain of Str is export where {
