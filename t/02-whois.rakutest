@@ -3,7 +3,7 @@
 use Test;
 use lib 'lib';
 use Net::Whois;
-plan 6;
+plan 2;
 
 unless %*ENV<NETWORK_TESTING> {
   diag "NETWORK_TESTING was not set";
